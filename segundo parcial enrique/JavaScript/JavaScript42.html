@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<tittle>pagina sensilla</tittle>
+    <script>
+        function iniciar(){
+            var labels=document.getElementsByClassName("label");
+            for(x=0; x<labels.length; x++){
+                labels[x].style.color="blue";
+            }
+            var negritas= document.getElementsByClassName("strong");
+            for(x=0; x=negritas.length; x++){
+                negritas[x].style.textTransform="uppercase"; 
+            }
+            document.getElementById("apellido").style.fontStyle="italic";
+            document.querySelectorAll("#apellido b")[0].style.fontStyle="normal";
+            
+            var parrafo=document.createElement("p");
+                    var contenido = document.createTextNode("hola mundo!");
+                    parrafo.appendChild(contenido);
+                    document.body.appendChild(parrafo);
+                                
+        } 
+    
+    
+    </script>
+        <style type="text/css">
+            #tabla{
+                width: 100 px;
+                border-spacing: 0;
+                border: 1px solid #ccc;
+            }
+            #tabla td{
+                width:30px;
+                height: 30px;
+                border: solid purple;
+            }
+        
+        
+        </style>
+</head>
+
+<body onload="iniciar();">
+<p id="titulo" class="label">esta pagina es<strong> muy sensilla</strong></p>
+    <p id="NOMBRE" class="label"><strong>NOMBRE</strong> ENRIQUE</p>
+    <P id="apellido" class="label"><b>apellido</b> hernandez</P>
+    <table id="tabla">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>        
+</body>
+</html>

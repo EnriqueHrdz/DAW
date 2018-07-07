@@ -1,0 +1,37 @@
+1.¿Qué evento usaste para poder ejecutar la actualización de tus datos?
+document.getElementById
+
+
+2.¿Qué código se encarga de agregar los elementos en la lista?
+<body onload="iniciar();">
+  <h1>About Me</h1>
+  
+  <ul>
+    <LI id="Nombre" class="listado"> Nickname:<strong> Carlos Enrique</strong></LI>
+    <LI id="Favorito" class="listado"> Favorites: <strong>Tae Kwon Do</strong></LI>
+    <LI id="Ciudad"class="listado"> Hometown: <strong>Cozumel</strong></LI>
+   
+    <img src="imagenes\maykra.PNG" width="250" height="250" alt="Funny">
+    </ul>
+ </body>
+
+
+
+
+
+3.¿Qué debería realizar si deseo eliminar los elementos de la lista al realizar un click al listado?
+
+El este caso no se puede por que no se realiza ninguna función para eliminar.
+
+Pero si se desea:
+
+function eliminar(elemento)
+        {
+            var id=elemento.parentNode.getAttribute("id");
+            node=document.getElementById(id);
+            node.parentNode.removeChild(node);
+        }
+
+
+
+
